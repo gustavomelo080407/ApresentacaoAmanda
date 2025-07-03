@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Mídia - Análise de Persona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Scale Mídia" class="logo">
+                    <h1 class="company-name">Scale Mídia</h1>
+                </div>
+                <div class="header-text">
+                    <h2 class="main-title">Análise Completa de Persona</h2>
+                    <p class="subtitle">Pacientes de Psiquiatria - Estratégia de Tráfego Pago</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Persona Overview -->
+    <section class="persona-overview">
+        <div class="container">
+            <h2 class="section-title">Perfil da Persona</h2>
+            <div class="persona-card">
+                <div class="persona-info">
+                    <h3>Juliana Martins</h3>
+                    <div class="persona-details">
+                        <div class="detail-item">
+                            <span class="label">Idade:</span>
+                            <span class="value">28-42 anos</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Profissão:</span>
+                            <span class="value">Advogada</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Localização:</span>
+                            <span class="value">São José/SC, Concórdia</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Estado Civil:</span>
+                            <span class="value">Casada, sem filhos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="persona-chart">
+                    <canvas id="ageChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problemas e Dores -->
+    <section class="problems-section">
+        <div class="container">
+            <h2 class="section-title">Principais Problemas e Dores</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>Problema Principal</h3>
+                    <p>Ansiedade constante, cansaço extremo, crises de choro e insônia, com dificuldade em assumir que precisa de ajuda médica especializada.</p>
+                </div>
+                <div class="emotions-chart">
+                    <h3>Emoções Envolvidas</h3>
+                    <canvas id="emotionsChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="fears-section">
+                <h3>Principais Medos</h3>
+                <div class="fears-grid">
+                    <div class="fear-item">Ser rotulada por amigos e familiares</div>
+                    <div class="fear-item">Perder o emprego ou desempenho profissional cair</div>
+                    <div class="fear-item">Nunca mais se sentir bem novamente</div>
+                    <div class="fear-item">Virar dependente de medicação</div>
+                    <div class="fear-item">Que ninguém a leve a sério</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roteiros de Conteúdo -->
+    <section class="scripts-section">
+        <div class="container">
+            <h2 class="section-title">Roteiros de Conteúdo Estratégicos</h2>
+            <div class="scripts-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Roteiros Criados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Categorias</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">Taxa de Conversão Esperada</div>
+                </div>
+            </div>
+            
+            <div class="scripts-grid" id="scriptsGrid">
+                <!-- Scripts serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Objeções e Conversões -->
+    <section class="objections-section">
+        <div class="container">
+            <h2 class="section-title">Análise de Objeções e Conversões</h2>
+            <div class="analysis-grid">
+                <div class="objections-chart">
+                    <h3>Principais Objeções</h3>
+                    <canvas id="objectionsChart"></canvas>
+                </div>
+                <div class="conversion-messages">
+                    <h3>Mensagens que Convertem</h3>
+                    <div class="message-categories">
+                        <div class="message-category">
+                            <h4>Encorajar Sonhos</h4>
+                            <p>Mostrar que é possível recuperar o controle da vida</p>
+                        </div>
+                        <div class="message-category">
+                            <h4>Aliviar Medos</h4>
+                            <p>Explicar que tratamento é individualizado e com suporte</p>
+                        </div>
+                        <div class="message-category">
+                            <h4>Confirmar Suspeitas</h4>
+                            <p>"Não é normal viver cansada e triste o tempo todo."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Escalar seus Resultados?</h2>
+                <p>Com nossa análise detalhada de persona e roteiros estratégicos, sua campanha de tráfego pago terá o direcionamento preciso para converter mais pacientes.</p>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <span class="cta-number">+50%</span>
+                        <span class="cta-label">Aumento em Conversões</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="cta-number">-30%</span>
+                        <span class="cta-label">Redução no CPA</span>
+                    </div>
+                    <div class="cta-stat">
+                        <span class="cta-number">15</span>
+                        <span class="cta-label">Roteiros Prontos</span>
+                    </div>
+                </div>
+                <a class="cta-button" href="https://form.typeform.com/to/jg0S8ToK" target="_blank" rel="noopener">Vamos Conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Scale Mídia" class="footer-logo-img">
+                    <span class="footer-company">Scale Mídia</span>
+                </div>
+                <div class="footer-text">
+                    <p>Especialistas em Tráfego Pago para Profissionais de Saúde Mental</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
